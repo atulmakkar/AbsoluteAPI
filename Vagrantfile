@@ -4,7 +4,7 @@
 
 require 'yaml'
 dir = File.dirname(File.expand_path(__FILE__))
-config_nodes = "#{dir}/artefacts/config/config_multi-nodes.yaml"
+config_nodes = "#{dir}/artifacts/config/config_multi-nodes.yaml"
 
 if !File.exist?("#{config_nodes}")
   raise 'Configuration file is missing! Please make sure that the configuration exists and try again.'
@@ -35,9 +35,9 @@ servers=[
     :hostname => "ansible." + "#{DOMAIN}",
     :ip => "#{BRIDGE_NET}" + "155",
     :ram => "#{RAM}",
-	:install_ansible => "./artefacts/scripts/install_ansible.sh", 
-	:config_ansible => "./artefacts/scripts/config_ansible.sh",
-	:source =>  "./artefacts/.",
+	:install_ansible => "./artifacts/scripts/install_ansible.sh", 
+	:config_ansible => "./artifacts/scripts/config_ansible.sh",
+	:source =>  "./artifacts/.",
 	:destination => "/home/vagrant/"
   }
 ]
