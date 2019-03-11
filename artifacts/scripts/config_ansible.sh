@@ -11,21 +11,21 @@ echo "10.211.10.4 docker.absolute.com" | sudo tee -a /etc/hosts
 
 echo " " | sudo tee -a /etc/ansible/hosts
 echo "[all]" | sudo tee -a /etc/ansible/hosts
-echo "gitlab.sample.com" | sudo tee -a /etc/ansible/hosts 
-echo "jenkins.sample.com" | sudo tee -a /etc/ansible/hosts 
-echo "docker.sample.com" | sudo tee -a /etc/ansible/hosts 
+echo "gitlab.absolute.com" | sudo tee -a /etc/ansible/hosts 
+echo "jenkins.absolute.com" | sudo tee -a /etc/ansible/hosts 
+echo "docker.absolute.com" | sudo tee -a /etc/ansible/hosts 
 
 echo " " | sudo tee -a /etc/ansible/hosts
 echo "[jenkins]" | sudo tee -a /etc/ansible/hosts
-echo "jenkins.sample.com" | sudo tee -a /etc/ansible/hosts
+echo "jenkins.absolute.com" | sudo tee -a /etc/ansible/hosts
 
 echo " " | sudo tee -a /etc/ansible/hosts
 echo "[docker]" | sudo tee -a /etc/ansible/hosts
-echo "docker.sample.com" | sudo tee -a /etc/ansible/hosts
+echo "docker.absolute.com" | sudo tee -a /etc/ansible/hosts
 
 echo " " | sudo tee -a /etc/ansible/hosts
 echo "[gitlab]" | sudo tee -a /etc/ansible/hosts
-echo "gitlab.sample.com" | sudo tee -a /etc/ansible/hosts
+echo "gitlab.absolute.com" | sudo tee -a /etc/ansible/hosts
 
 # permissioning
 dos2unix ~/artifacts/scripts/ssh_pass.sh
