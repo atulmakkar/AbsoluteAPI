@@ -27,12 +27,11 @@ echo " " | sudo tee -a /etc/ansible/hosts
 echo "[gitlab]" | sudo tee -a /etc/ansible/hosts
 echo "gitlab.sample.com" | sudo tee -a /etc/ansible/hosts
 
-#cat /etc/ansible/hosts
+# permissioning
 dos2unix ~/artifacts/scripts/ssh_pass.sh
 chmod +x ~/artifacts/scripts/ssh_pass.sh
-#chown vagrant:vagrant ssh_pass.sh 
 
-# password less authentication using expect scripting language
+# password less authentication using expect module
 ~/artifacts/scripts/ssh_pass.sh $USER $PASSWORD "ansible.absolute.com" 
 ~/artifacts/scripts/ssh_pass.sh $USER $PASSWORD "docker.absolute.com" 
 ~/artifacts/scripts/ssh_pass.sh $USER $PASSWORD "jenkins.absolute.com"
