@@ -33,10 +33,10 @@ chmod +x ~/artifacts/scripts/ssh_pass.sh
 #chown vagrant:vagrant ssh_pass.sh 
 
 # password less authentication using expect scripting language
-~/artefacts/scripts/ssh_pass.sh $USER $PASSWORD "ansible.absolute.com" 
-~/artefacts/scripts/ssh_pass.sh $USER $PASSWORD "docker.absolute.com" 
-~/artefacts/scripts/ssh_pass.sh $USER $PASSWORD "jenkins.absolute.com"
-~/artefacts/scripts/ssh_pass.sh $USER $PASSWORD "gitlab.absolute.com"
+~/artifacts/scripts/ssh_pass.sh $USER $PASSWORD "ansible.absolute.com" 
+~/artifacts/scripts/ssh_pass.sh $USER $PASSWORD "docker.absolute.com" 
+~/artifacts/scripts/ssh_pass.sh $USER $PASSWORD "jenkins.absolute.com"
+~/artifacts/scripts/ssh_pass.sh $USER $PASSWORD "gitlab.absolute.com"
 
 ansible-playbook ~/artifacts/playbooks/install_java.yaml
 ansible-playbook ~/artifacts/playbooks/install_jenkins.yaml
