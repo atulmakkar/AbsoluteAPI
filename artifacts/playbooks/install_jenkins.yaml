@@ -24,5 +24,3 @@
       service: 
         name: jenkins
         state: started
-
-    
